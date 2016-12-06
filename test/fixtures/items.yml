@@ -1,0 +1,15 @@
+water:
+  name: Water
+  points: 4
+
+food:
+  name: Comida
+  points: 3
+
+medicine:
+  name: Medicina
+  points: 2
+
+munition:
+  name: Munição
+  points: 1
