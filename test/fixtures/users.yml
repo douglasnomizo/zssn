@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+carol:
+  name: Carol
+  age: 33
+  gender: male
+  infected: false
+
+bruna:
+  name: Bruna
+  age: 25
+  gender: female
+  infected: true
