@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+carol_water:
+  item: water
+  user: carol
+  quantity: 3
+
+carol_food:
+  item: food
+  user: carol
+  quantity: 5
+
+jeff_medicine:
+  item: medicine
+  user: jeff
+  quantity: 1
+
+jeff_water:
+  item: water
+  user: jeff
+  quantity: 0
