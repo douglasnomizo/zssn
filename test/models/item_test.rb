@@ -1,23 +1,7 @@
 require 'test_helper'
 
 class ItemTest < ActiveSupport::TestCase
-  setup do
-    @item = items(:water)
-  end
-
-  test "should save correctly" do
-    @item = Item.new name: "Food", points: 2
-    assert @item.save
-  end
-
-  test "should have name" do
-    @item.name = nil
-    assert_not @item.save
-  end
-
-  test "should have positive points" do
-    @item.points = -1
-    assert_not @item.save
-  end
-
+  should validate_presence_of(:name)
+  should validate_presence_of(:points)
+  should validate_numericality_of(:points).is_greater_than(0)
 end

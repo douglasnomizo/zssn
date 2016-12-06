@@ -1,22 +1,8 @@
 require 'test_helper'
 
 class UserTest < ActiveSupport::TestCase
-  setup do
-    @user = users(:carol)
-  end
-
-  test "should have name" do
-    @user.name = nil
-    assert_not @user.save
-  end
-
-  test "should have gender" do
-    @user.gender = nil
-    assert_not @user.save
-  end
-
-  test "should have age greater than zero" do
-    @user.age = 0
-    assert_not @user.save
-  end
+  should validate_presence_of(:name)
+  should validate_uniqueness_of(:name)
+  should validate_presence_of(:gender)
+  should validate_numericality_of(:age).is_greater_than(0)
 end

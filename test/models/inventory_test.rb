@@ -1,17 +1,8 @@
 require 'test_helper'
 
 class InventoryTest < ActiveSupport::TestCase
-  setup do
-    @inventory = inventories(:carol_water)
-  end
-
-  test "should have quantity"  do
-    @inventory.quantity = nil
-    assert_not @inventory.save
-  end
-
-  test "quantity should not be negative"  do
-    @inventory.quantity = -1
-    assert_not @inventory.save
-  end
+  should validate_presence_of(:quantity)
+  should validate_numericality_of(:quantity).is_greater_than_or_equal_to(0)
+  should belong_to(:item)
+  should belong_to(:user)
 end
