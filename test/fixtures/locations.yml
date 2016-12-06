@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+porto_alegre:
+  user: jeff
+  lat: -30.039123
+  long: -51.223963
+
+sao_paulo:
+  user: carol
+  lat: -23.562927
+  long: -46.654907
