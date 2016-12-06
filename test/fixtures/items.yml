@@ -3,13 +3,13 @@ water:
   points: 4
 
 food:
-  name: Comida
+  name: Food
   points: 3
 
 medicine:
-  name: Medicina
+  name: Medicine
   points: 2
 
 munition:
-  name: Munição
+  name: Munition
   points: 1
