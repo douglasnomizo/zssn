@@ -8,4 +8,6 @@ class User < ApplicationRecord
   has_one :location
   has_many :inventory
   has_many :items, through: :inventory
+
+  scope :not_infected, -> { where(infected: false) }
 end
